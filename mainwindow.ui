@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>573</width>
+    <height>257</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>521</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>521</width>
+      <height>221</height>
+     </size>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="minimumSize">
+      <size>
+       <width>259</width>
+       <height>221</height>
+      </size>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="animated">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QTreeWidget" name="treeWidget_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>258</width>
+       <height>221</height>
+      </size>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="animated">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>573</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Connect">
+    <property name="title">
+     <string>&amp;Connect</string>
+    </property>
+    <addaction name="actionConnect_To"/>
+    <addaction name="action_Disconnect"/>
+    <addaction name="action_Addserver"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Downloads">
+    <property name="title">
+     <string>&amp;Downloads</string>
+    </property>
+    <addaction name="action_From_Server"/>
+    <addaction name="action_To_Server"/>
+    <addaction name="separator"/>
+    <addaction name="action_My_Downloads"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu_Connect"/>
+   <addaction name="menu_Downloads"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionConnect_To"/>
+   <addaction name="action_Disconnect"/>
+   <addaction name="action_From_Server"/>
+   <addaction name="action_To_Server"/>
+   <addaction name="action_My_Downloads"/>
+   <addaction name="action_About"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionConnect_To">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/Img/Img/Connect.PNG</normaloff>:/Img/Img/Connect.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Connect &amp;To</string>
+   </property>
+   <property name="toolTip">
+    <string>Choose server and connect</string>
+   </property>
+  </action>
+  <action name="action_Disconnect">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/Img/Img/Disconnect.PNG</normaloff>:/Img/Img/Disconnect.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Disconnect</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_From_Server">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/Img/Img/From.png</normaloff>:/Img/Img/From.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;From Server</string>
+   </property>
+  </action>
+  <action name="action_To_Server">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/Img/Img/To.PNG</normaloff>:/Img/Img/To.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;To Server</string>
+   </property>
+  </action>
+  <action name="action_My_Downloads">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/Img/Img/My.PNG</normaloff>:/Img/Img/My.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;My Downloads</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/Img/Img/Help.PNG</normaloff>:/Img/Img/Help.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="action_Addserver">
+   <property name="text">
+    <string>&amp;Addserver</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

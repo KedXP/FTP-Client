@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/Img">
+        <file>Img/Connect.PNG</file>
+        <file>Img/Disconnect.PNG</file>
+        <file>Img/From.png</file>
+        <file>Img/Help.PNG</file>
+        <file>Img/My.PNG</file>
+        <file>Img/To.PNG</file>
+        <file>Img/folder.png</file>
+        <file>Img/file.png</file>
+    </qresource>
+</RCC>
