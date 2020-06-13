@@ -13,7 +13,7 @@ m_Remove::m_Remove(QString *Url, QString *User, QString *Pass, QString *Path,QOb
         pass=Pass;
         path=Path;
 }
-
+//Just a commment
 void m_Remove::m_rm()
 {
 
